@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LogoutComponent } from './logout/logout.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +18,7 @@ import { LogoutComponent } from './logout/logout.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
 
     AuthModule.forRoot({
       domain: 'dev-fmo9aa35.us.auth0.com',
